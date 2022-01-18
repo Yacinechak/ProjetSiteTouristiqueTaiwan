@@ -1,0 +1,1958 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "montserrat", sans-serif;
+}
+.fixed-header-slide {
+    width: 100%;
+    height: 6.3em;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+.fixed-header-wrap {
+    width: 100%;
+    height: 6.3em;
+    position: absolute;
+    bottom: 0px;
+}
+header {
+    width: 100%;
+    height: 6.3em;
+    background: rgba(85, 85, 85, 0.75);
+    padding: 0 1.3em;
+    position: relative;
+    z-index: 1;
+    box-shadow: #999999;
+    color: #fff;
+}
+.logo {
+    width: 19em;
+    cursor: pointer;
+    margin-top: 1em;
+    color: linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75));
+}
+.menu {
+    float: right;
+    line-height: 6.3em;
+}
+.menu a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 1.3em;
+    transition: 0.4s;
+}
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 2.8em;
+    cursor: pointer;
+    display: none;
+}
+.show-menu-btn {
+    float: right;
+}
+.show-menu-btn i {
+    line-height: 2.3em;
+}
+.menu a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {
+    color: #009688;
+}
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+.myBtn {
+    display: none; /*默認隱藏*/
+    position: fixed;
+    bottom: 1.8em; 
+    right: 0.8em;
+    z-index: 99; 
+    border: none;
+    outline: none;
+    height: 1.5em;
+    background-color: rgb(180, 180, 180); /*設置背景顏色*/
+    font-size: 2.8em;
+    font-weight: 300;
+    color: #fff; /*文字顏色*/
+    cursor: pointer;
+    padding: 0.3em 0.6em;  /*圓的長寬*/
+    border-radius: 1em; /*圓角*/
+}
+.myBtn:hover {
+    background-color: rgba(85, 85, 85, 0.75);
+}
+.first {
+    width: 100%;
+    height: 155.2em;
+    background-image: linear-gradient(rgba(75, 75, 75, 0.75), rgba(255, 255, 255, 0.75)), url(img/bg0_3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0 8%;
+    position: absolute;
+}
+#s-title {
+	text-align: center;
+	padding-top: 2.8em;
+	margin-bottom: 1.1em;
+    font-size: 2.5em;
+	font-weight: 600;
+	position: relative;
+    color: #000;
+}
+#s-title::after {
+	content: "";
+	background: #009688;
+	width: 4.5em;
+	height: 0.12em;
+	position: absolute;
+	bottom: -0.15em;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.food-table {
+    height: 50.2em;
+	margin: auto;
+    margin-top: 0.2em;
+    position: relative;
+}
+#f1 {
+    height: 50.2em;
+    width: 50.2em;
+    background-image: url(img/01food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f2 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/02food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f3 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/03food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 25.2em;
+	transition: 0.5s linear;
+}
+#f4 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/04food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+	left: 50%;
+	margin-left: 25.4em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f5 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/05food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+    left: 50%;
+	margin-left: 25.4em;
+	top: 25.2em;
+	transition: 0.5s linear;
+}
+#f6 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/06food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+    right: 50%;
+    margin-right: 25.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f7 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/07food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+    position: absolute;
+	right: 50%;
+    margin-right: 25.2em;
+	top: 25.2em;
+	transition: 0.5s linear;
+}
+#f8 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/08food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-right: 0em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f9 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/09food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-left: 0em;
+	top: 25.2em;
+	transition: 0.5s linear;
+}
+#f10 {
+    height: 50.2em;
+    width: 50.2em;
+    background-image: url(img/10food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f11 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/11food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-right: 25.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f12 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/12food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	right: 50%;
+    margin-right: 0em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f13 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/13food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f14 {
+    height: 25em;
+    width: 25em;
+    background-image: url(img/14food.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+	cursor: pointer;
+	overflow: hidden;
+	position: absolute;
+	left: 50%;
+	margin-left: 25.4em;
+	top: 0em;
+	transition: 0.5s linear;
+}
+#f1:hover, #f2:hover, #f3:hover, #f4:hover, #f5:hover,
+#f6:hover, #f7:hover, #f8:hover, #f9:hover, #f10:hover,
+#f11:hover, #f12:hover, #f13:hover, #f14:hover {
+    opacity: 0.85;
+    transition: 0.2s linear;
+}
+#checkbox1, #checkbox2, #checkbox3, #checkbox4, #checkbox5,
+#checkbox6, #checkbox7, #checkbox8, #checkbox9, #checkbox10,
+#checkbox11, #checkbox12, #checkbox13, #checkbox14 { /*Hide the checkbox*/
+    display: none;
+}
+#ft1 { /*Hide expandable content by default*/
+    height: 50.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft2, #ft3 { /*Hide expandable content by default*/
+    height: 50.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    right: 50%;
+    margin-right: -25.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft4, #ft5 { /*Hide expandable content by default*/
+    height: 50.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	right: 50%;
+	margin-right: -50.4em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft6, #ft7 { /*Hide expandable content by default*/
+    height: 50.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -25em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft8, #ft9 { /*Hide expandable content by default*/
+    height: 50.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft10 { /*Hide expandable content by default*/
+    height: 50.2em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	right: 50%;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft11 { /*Hide expandable content by default*/
+    height: 25em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+    margin-left: -25em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft12 { /*Hide expandable content by default*/
+    height: 25em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    left: 50%;
+	margin-left: 0.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft13 { /*Hide expandable content by default*/
+    height: 25em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+    right: 50%;
+    margin-right: -25.2em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft14 { /*Hide expandable content by default*/
+    height: 25em;
+    width: 0em;
+    background-color: #009688;
+	cursor: pointer;
+    position: absolute;
+	right: 50%;
+	margin-right: -50.4em;
+	top: 0em;
+	z-index: 1;
+	word-break: break-all;
+	word-wrap: break-word;
+}
+#ft1 h1, #ft2 h1, #ft3 h1, #ft4 h1, #ft5 h1,
+#ft6 h1, #ft7 h1, #ft8 h1, #ft9 h1, #ft10 h1,
+#ft11 h1, #ft12 h1, #ft13 h1, #ft14 h1 {
+    margin-top: 0em;
+    font-size: 0em;
+    letter-spacing: 0em;
+    text-align: justify;
+    opacity: 0;
+}
+#checkbox1:checked ~ #ft1 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox1:not(:checked) ~ #ft1 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+#checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+    margin-left: -50.2em;
+    transition: 0.5s linear;
+}
+#checkbox2:checked ~ #f1, #checkbox3:checked ~ #f1 {
+    visibility: collapse;
+    transition: 0.5s linear;
+}
+#checkbox2:not(:checked) ~ #ft2, #checkbox3:not(:checked) ~ #ft3 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+#checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+    margin-left: -50.2em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+#checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+    margin-left: -25em;
+    transition: 0.5s linear;
+}
+#checkbox4:checked ~ #f1, #checkbox5:checked ~ #f1 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox4:not(:checked) ~ #ft4, #checkbox5:not(:checked) ~ #ft5 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox6:checked ~ #f10, #checkbox7:checked ~ #f10 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+#checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+    margin-right: -50.4em;
+    transition: 0.5s linear;
+}
+#checkbox6:not(:checked) ~ #ft6, #checkbox7:not(:checked) ~ #ft7 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox8:not(:checked) ~ #ft8, #checkbox9:not(:checked) ~ #ft9 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox10:checked ~ #ft10 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox10:not(:checked) ~ #ft10 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox11:checked ~ #ft11 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox11:checked ~ #f13, #checkbox11:checked ~ #f14 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox11:checked ~ #f12 {
+    margin-right: -50.4em;
+    transition: 0.5s linear;
+}
+#checkbox11:not(:checked) ~ #ft11 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox12:checked ~ #ft12 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox12:not(:checked) ~ #ft12 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox13:checked ~ #ft13 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox13:checked ~ #f13 {
+    margin-left: -50.2em;
+    transition: 0.5s linear;
+}
+#checkbox13:checked ~ #f11, #checkbox13:checked ~ #f12 {
+    visibility: collapse;
+    transition: 0.5s linear;
+}
+#checkbox13:not(:checked) ~ #ft13 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #ft14 {
+    width: 50.2em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #f13 {
+    margin-left: -50.2em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #f14 {
+    margin-left: -25em;
+    transition: 0.5s linear;
+}
+#checkbox14:checked ~ #f11, #checkbox14:checked ~ #f12 {
+    opacity: 0;
+    transition: 0.5s linear;
+}
+#checkbox14:not(:checked) ~ #ft14 {
+    width: 0em;
+    transition: 0.5s linear;
+}
+#checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+#checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+#checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+#checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+#checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+#checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+#checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+    margin-top: 0em;
+    font-size: 3.2em;
+    letter-spacing: 0.01em;
+    opacity: 1;
+    transition: 0.5s linear;
+}
+#checkbox1:not(:checked) ~ #ft1 h1, #checkbox2:not(:checked) ~ #ft2 h1,
+#checkbox3:not(:checked) ~ #ft3 h1, #checkbox4:not(:checked) ~ #ft4 h1,
+#checkbox5:not(:checked) ~ #ft5 h1, #checkbox6:not(:checked) ~ #ft6 h1,
+#checkbox7:not(:checked) ~ #ft7 h1, #checkbox8:not(:checked) ~ #ft8 h1,
+#checkbox9:not(:checked) ~ #ft9 h1, #checkbox10:not(:checked) ~ #ft10 h1,
+#checkbox11:not(:checked) ~ #ft11 h1, #checkbox12:not(:checked) ~ #ft12 h1,
+#checkbox13:not(:checked) ~ #ft13 h1, #checkbox14:not(:checked) ~ #ft14 h1 {
+    margin-top: 0em;
+    font-size: 0em;
+    letter-spacing: 0em;
+    opacity: 0;
+    transition: 0.5s linear;
+}
+.food-name1 {
+	color: #000;
+	font-size: 3.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 0.2em;
+	bottom: 0.2em;
+    text-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff,
+                0 0 50px #fff
+}
+.food-name2 {
+	color: #000;
+	font-size: 3.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 0.2em;
+	bottom: 0.2em;
+    text-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff,
+                0 0 50px #fff
+}
+.food-name3 {
+	color: #000;
+	font-size: 3.2em;
+	text-transform: uppercase;
+	font-weight: 700;
+	position: absolute;
+	left: 0.2em;
+	top: 0.2em;
+    text-shadow: 0 0 5px #fff,
+                0 0 10px #fff,
+                0 0 20px #fff,
+                0 0 30px #fff,
+                0 0 40px #fff,
+                0 0 50px #fff
+}
+.last {
+    position: absolute;
+    width: 100%;
+    height: 20.5em;
+    text-align: center;
+    background-color: #2c3a47;
+    /*background-repeat: no-repeat;*/
+    /*min-width: 1100px;*/
+    margin-top: 155.2em;
+}
+.btn {
+    display: inline-block;
+    width: 5.8em;
+    height: 5.8em;
+    background: #f1f1f1;
+    margin: 0.3em;
+    margin-top: 3em;
+    border-radius: 2em;
+    box-shadow: 0 1em 3em -1em #00000070;
+    color: #009688;
+    overflow: hidden;
+    position: relative;
+}
+.btn i {
+    line-height: 3.5em;
+    font-size: 1.65em;
+    transition: 0.2s linear;
+}
+.btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #009688;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+.btn:hover::before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa {
+    0% {
+        left: -110%;
+        top: 90%;
+    }
+    50% {
+        left: 10%;
+        top: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+.info {
+    margin: 1em;
+    font-size: 0.85em;
+    font-weight: 300;
+    text-align: center;
+    color: #fff;
+}
+.info p {
+    margin: 0.5em;
+}
+.fixed-footer-wrap {
+    width: 100%;
+    height: 2.58em;
+    position: fixed;
+    bottom: 0px;
+    z-index: 3;
+    overflow: visible;
+}
+.footer_mobile {
+    background-color: #999999;
+    opacity: 0.6;
+    color: #ffffff;
+    width: 100%;
+    height: 2.58em;
+    margin: 0 auto;
+}
+.footer_mobile a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.end {
+    float: right;
+}
+.end a {
+    font-size: 1.3em;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: 0.4s;
+}
+@media screen and (max-width: 115em) {
+    .first {
+        height: 143.2em;
+    }
+    .food-table {
+        height: 45.2em;
+    }
+    #f1 {
+        height: 45.2em;
+        width: 45.2em;
+    }
+    #f2, #f13 {
+        height: 22.5em;
+        width: 22.5em;
+    }
+    #f3 {
+        height: 22.5em;
+        width: 22.5em;
+    	top: 22.7em;
+    }
+    #f4, #f14 {
+        height: 22.5em;
+        width: 22.5em;
+    	margin-left: 22.9em;
+    }
+    #f5 {
+        height: 22.5em;
+        width: 22.5em;
+    	margin-left: 22.9em;
+    	top: 22.7em;
+    }
+    #f6, #f11 {
+        height: 22.5em;
+        width: 22.5em;
+        margin-right: 22.7em;
+    }
+    #f7 {
+        height: 22.5em;
+        width: 22.5em;
+        margin-right: 22.7em;
+    	top: 22.7em;
+    }
+    #f8, #f12 {
+        height: 22.5em;
+        width: 22.5em;
+    }
+    #f9 {
+        height: 22.5em;
+        width: 22.5em;
+    	top: 22.7em;
+    }
+    #f10 {
+        height: 45.2em;
+        width: 45.2em;
+    }
+    #ft1 {
+        height: 45.2em;
+    }
+    #ft2, #ft3 {
+        height: 45.2em;
+        margin-right: -22.7em;
+    }
+    #ft4, #ft5 {
+        height: 45.2em;
+        margin-right: -45.4em;
+    }
+    #ft6, #ft7 {
+        height: 45.2em;
+        margin-left: -22.5em;
+    }
+    #ft8, #ft9 {
+        height: 45.2em;
+    }
+    #ft10 {
+        height: 45.2em;
+    }
+    #ft11 {
+        height: 22.5em;
+        margin-left: -22.5em;
+    }
+    #ft12 {
+        height: 22.5em;
+    }
+    #ft13 {
+        height: 22.5em;
+        margin-right: -22.7em;
+    }
+    #ft14 {
+        height: 22.5em;
+        margin-right: -45.4em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 45.2em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 45.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -45.2em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 45.2em;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -45.2em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: -22.5em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 45.2em;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -45.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+        width: 45.2em;
+    }
+    #checkbox10:checked ~ #ft10 {
+        width: 45.2em;
+    }
+    #checkbox11:checked ~ #ft11 {
+        width: 45.2em;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -45.4em;
+    }
+    #checkbox12:checked ~ #ft12 {
+        width: 45.2em;
+    }
+    #checkbox13:checked ~ #ft13 {
+        width: 45.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: -45.2em;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 45.2em;
+    }
+    #checkbox14:checked ~ #f13 {
+        margin-left: -45.2em;
+    }
+    #checkbox14:checked ~ #f14 {
+        margin-left: -22.5em;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 3em;
+    }
+    .food-name1 {
+    	font-size: 3em;
+    }
+    .food-name2 {
+    	font-size: 3em;
+    }
+    .food-name3 {
+    	font-size: 3em;
+    }
+    .last {
+        margin-top: 143.2em;
+    }
+}
+@media screen and (max-width: 100em) { /*隨視窗大小調整內容排放*/
+	.show-menu-btn, .hide-menu-btn {
+		display: block;
+	}
+	.menu { /*換成目錄顯示之後的黑底背景*/
+		position: fixed;
+		width: 100%;
+		height: 100%;
+		background: #333;
+		right: -100%;
+		top: 0;
+		text-align: center;
+		padding: 8em 0;
+		line-height: normal;
+		transition: 0.7s;
+	}
+	.menu a { /*換成目錄顯示之後文字垂直堆疊*/
+		display: block;
+		padding: 1.3em;
+	}
+	.hide-menu-btn { /*換成目錄顯示之後顯示目錄圖樣*/
+		position: absolute;
+		top: 1.3em;
+		right: 1.3em;
+	}
+	#chk:checked ~ .menu { /*使目錄圖樣Enable*/
+		right: 0;
+	}
+}
+@media screen and (max-width: 95em) {
+    .first {
+        height: 128.2em;
+    }
+    .food-table {
+        height: 40.2em;
+    }
+    #f1 {
+        height: 40.2em;
+        width: 40.2em;
+    }
+    #f2, #f13 {
+        height: 20em;
+        width: 20em;
+    }
+    #f3 {
+        height: 20em;
+        width: 20em;
+    	top: 20.2em;
+    }
+    #f4, #f14 {
+        height: 20em;
+        width: 20em;
+    	margin-left: 20.4em;
+    }
+    #f5 {
+        height: 20em;
+        width: 20em;
+    	margin-left: 20.4em;
+    	top: 20.2em;
+    }
+    #f6, #f11 {
+        height: 20em;
+        width: 20em;
+        margin-right: 20.2em;
+    }
+    #f7 {
+        height: 20em;
+        width: 20em;
+        margin-right: 20.2em;
+    	top: 20.2em;
+    }
+    #f8, #f12 {
+        height: 20em;
+        width: 20em;
+    }
+    #f9 {
+        height: 20em;
+        width: 20em;
+    	top: 20.2em;
+    }
+    #f10 {
+        height: 40.2em;
+        width: 40.2em;
+    }
+    #ft1 {
+        height: 40.2em;
+    }
+    #ft2, #ft3 {
+        height: 40.2em;
+        margin-right: -20.2em;
+    }
+    #ft4, #ft5 {
+        height: 40.2em;
+        margin-right: -40.4em;
+    }
+    #ft6, #ft7 {
+        height: 40.2em;
+        margin-left: -20em;
+    }
+    #ft8, #ft9 {
+        height: 40.2em;
+    }
+    #ft10 {
+        height: 40.2em;
+    }
+    #ft11 {
+        height: 20em;
+        margin-left: -20em;
+    }
+    #ft12 {
+        height: 20em;
+    }
+    #ft13 {
+        height: 20em;
+        margin-right: -20.2em;
+    }
+    #ft14 {
+        height: 20em;
+        margin-right: -40.4em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 40.2em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 40.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -40.2em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 40.2em;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -40.2em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: -20em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 40.2em;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -40.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+        width: 40.2em;
+    }
+    #checkbox10:checked ~ #ft10 {
+        width: 40.2em;
+    }
+    #checkbox11:checked ~ #ft11 {
+        width: 40.2em;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -40.4em;
+    }
+    #checkbox12:checked ~ #ft12 {
+        width: 40.2em;
+    }
+    #checkbox13:checked ~ #ft13 {
+        width: 40.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: -40.2em;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 40.2em;
+    }
+    #checkbox14:checked ~ #f13 {
+        margin-left: -40.2em;
+    }
+    #checkbox14:checked ~ #f14 {
+        margin-left: -20em;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 2.8em;
+    }
+    .food-name1 {
+    	font-size: 2.8em;
+    }
+    .food-name2 {
+    	font-size: 2.8em;
+    }
+    .food-name3 {
+    	font-size: 2.8em;
+    }
+    .last {
+        margin-top: 128.2em;
+    }
+}
+@media screen and (max-width: 85em) {
+    .first {
+        height: 98.2em;
+    }
+    .food-table {
+        height: 30.2em;
+    }
+    #f1 {
+        height: 30.2em;
+        width: 30.2em;
+    }
+    #f2, #f13 {
+        height: 15em;
+        width: 15em;
+    }
+    #f3 {
+        height: 15em;
+        width: 15em;
+    	top: 15.2em;
+    }
+    #f4, #f14 {
+        height: 15em;
+        width: 15em;
+    	margin-left: 15.4em;
+    }
+    #f5 {
+        height: 15em;
+        width: 15em;
+    	margin-left: 15.4em;
+    	top: 15.2em;
+    }
+    #f6, #f11 {
+        height: 15em;
+        width: 15em;
+        margin-right: 15.2em;
+    }
+    #f7 {
+        height: 15em;
+        width: 15em;
+        margin-right: 15.2em;
+    	top: 15.2em;
+    }
+    #f8, #f12 {
+        height: 15em;
+        width: 15em;
+    }
+    #f9 {
+        height: 15em;
+        width: 15em;
+    	top: 15.2em;
+    }
+    #f10 {
+        height: 30.2em;
+        width: 30.2em;
+    }
+    #ft1 {
+        height: 30.2em;
+    }
+    #ft2, #ft3 {
+        height: 30.2em;
+        margin-right: -15.2em;
+    }
+    #ft4, #ft5 {
+        height: 30.2em;
+        margin-right: -30.4em;
+    }
+    #ft6, #ft7 {
+        height: 30.2em;
+        margin-left: -15em;
+    }
+    #ft8, #ft9 {
+        height: 30.2em;
+    }
+    #ft10 {
+        height: 30.2em;
+    }
+    #ft11 {
+        height: 15em;
+        margin-left: -15em;
+    }
+    #ft12 {
+        height: 15em;
+    }
+    #ft13 {
+        height: 15em;
+        margin-right: -15.2em;
+    }
+    #ft14 {
+        height: 15em;
+        margin-right: -30.4em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 30.2em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 30.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -30.2em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 30.2em;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -30.2em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: -15em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 30.2em;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -30.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+        width: 30.2em;
+    }
+    #checkbox10:checked ~ #ft10 {
+        width: 30.2em;
+    }
+    #checkbox11:checked ~ #ft11 {
+        width: 30.2em;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -30.4em;
+    }
+    #checkbox12:checked ~ #ft12 {
+        width: 30.2em;
+    }
+    #checkbox13:checked ~ #ft13 {
+        width: 30.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: -30.2em;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 30.2em;
+    }
+    #checkbox14:checked ~ #f13 {
+        margin-left: -30.2em;
+    }
+    #checkbox14:checked ~ #f14 {
+        margin-left: -15em;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 2.5em;
+    }
+    .food-name1 {
+    	font-size: 2.5em;
+    }
+    .food-name2 {
+    	font-size: 2.5em;
+    }
+    .food-name3 {
+    	font-size: 2.5em;
+    }
+    .last {
+        margin-top: 98.2em;
+    }
+}
+@media screen and (max-width: 68em) {
+    .first {
+        height: 83.2em;
+    }
+    .food-table {
+        height: 25.2em;
+    }
+    #f1 {
+        height: 25.2em;
+        width: 25.2em;
+    }
+    #f2, #f13 {
+        height: 12.5em;
+        width: 12.5em;
+    }
+    #f3 {
+        height: 12.5em;
+        width: 12.5em;
+    	top: 12.7em;
+    }
+    #f4, #f14 {
+        height: 12.5em;
+        width: 12.5em;
+    	margin-left: 12.9em;
+    }
+    #f5 {
+        height: 12.5em;
+        width: 12.5em;
+    	margin-left: 12.9em;
+    	top: 12.7em;
+    }
+    #f6, #f11 {
+        height: 12.5em;
+        width: 12.5em;
+        margin-right: 12.7em;
+    }
+    #f7 {
+        height: 12.5em;
+        width: 12.5em;
+        margin-right: 12.7em;
+    	top: 12.7em;
+    }
+    #f8, #f12 {
+        height: 12.5em;
+        width: 12.5em;
+    }
+    #f9 {
+        height: 12.5em;
+        width: 12.5em;
+    	top: 12.7em;
+    }
+    #f10 {
+        height: 25.2em;
+        width: 25.2em;
+    }
+    #ft1 {
+        height: 25.2em;
+    }
+    #ft2, #ft3 {
+        height: 25.2em;
+        margin-right: -12.7em;
+    }
+    #ft4, #ft5 {
+        height: 25.2em;
+        margin-right: -25.4em;
+    }
+    #ft6, #ft7 {
+        height: 25.2em;
+        margin-left: -12.5em;
+    }
+    #ft8, #ft9 {
+        height: 25.2em;
+    }
+    #ft10 {
+        height: 25.2em;
+    }
+    #ft11 {
+        height: 12.5em;
+        margin-left: -12.5em;
+    }
+    #ft12 {
+        height: 12.5em;
+    }
+    #ft13 {
+        height: 12.5em;
+        margin-right: -12.7em;
+    }
+    #ft14 {
+        height: 12.5em;
+        margin-right: -25.4em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 25.2em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 25.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -25.2em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 25.2em;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -25.2em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: -12.5em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 25.2em;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -25.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+        width: 25.2em;
+    }
+    #checkbox10:checked ~ #ft10 {
+        width: 25.2em;
+    }
+    #checkbox11:checked ~ #ft11 {
+        width: 25.2em;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -25.4em;
+    }
+    #checkbox12:checked ~ #ft12 {
+        width: 25.2em;
+    }
+    #checkbox13:checked ~ #ft13 {
+        width: 25.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: -25.2em;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 25.2em;
+    }
+    #checkbox14:checked ~ #f13 {
+        margin-left: -25.2em;
+    }
+    #checkbox14:checked ~ #f14 {
+        margin-left: -12.5em;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 2.35em;
+    }
+    .food-name1 {
+    	font-size: 2.35em;
+    }
+    .food-name2 {
+    	font-size: 2.35em;
+    }
+    .food-name3 {
+    	font-size: 2.35em;
+    }
+    .last {
+        margin-top: 83.2em;
+    }
+}
+@media screen and (max-width: 55em) {
+    .first {
+        height: 73.2em;
+    }
+    .food-table {
+        height: 20.2em;
+    }
+    #f1 {
+        height: 20.2em;
+        width: 20.2em;
+    }
+    #f2, #f13 {
+        height: 10em;
+        width: 10em;
+    }
+    #f3 {
+        height: 10em;
+        width: 10em;
+    	top: 10.2em;
+    }
+    #f4, #f14 {
+        height: 10em;
+        width: 10em;
+    	margin-left: 10.4em;
+    }
+    #f5 {
+        height: 10em;
+        width: 10em;
+    	margin-left: 10.4em;
+    	top: 10.2em;
+    }
+    #f6, #f11 {
+        height: 10em;
+        width: 10em;
+        margin-right: 10.2em;
+    }
+    #f7 {
+        height: 10em;
+        width: 10em;
+        margin-right: 10.2em;
+    	top: 10.2em;
+    }
+    #f8, #f12 {
+        height: 10em;
+        width: 10em;
+    }
+    #f9 {
+        height: 10em;
+        width: 10em;
+    	top: 10.2em;
+    }
+    #f10 {
+        height: 20.2em;
+        width: 20.2em;
+    }
+    #ft1 {
+        height: 20.2em;
+    }
+    #ft2, #ft3 {
+        height: 20.2em;
+        margin-right: -10.2em;
+    }
+    #ft4, #ft5 {
+        height: 20.2em;
+        margin-right: -20.4em;
+    }
+    #ft6, #ft7 {
+        height: 20.2em;
+        margin-left: -10em;
+    }
+    #ft8, #ft9 {
+        height: 20.2em;
+    }
+    #ft10 {
+        height: 20.2em;
+    }
+    #ft11 {
+        height: 10em;
+        margin-left: -10em;
+    }
+    #ft12 {
+        height: 10em;
+    }
+    #ft13 {
+        height: 10em;
+        margin-right: -10.2em;
+    }
+    #ft14 {
+        height: 10em;
+        margin-right: -20.4em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 20.2em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 20.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -20.2em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 20.2em;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -20.2em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: -10em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 20.2em;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -20.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9 {
+        width: 20.2em;
+    }
+    #checkbox10:checked ~ #ft10 {
+        width: 20.2em;
+    }
+    #checkbox11:checked ~ #ft11 {
+        width: 20.2em;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -20.4em;
+    }
+    #checkbox12:checked ~ #ft12 {
+        width: 20.2em;
+    }
+    #checkbox13:checked ~ #ft13 {
+        width: 20.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: -20.2em;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 20.2em;
+    }
+    #checkbox14:checked ~ #f13 {
+        margin-left: -20.2em;
+    }
+    #checkbox14:checked ~ #f14 {
+        margin-left: -10em;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 2.2em;
+    }
+    .food-name1 {
+    	font-size: 2.2em;
+    }
+    .food-name2 {
+    	font-size: 2.2em;
+    }
+    .food-name3 {
+    	font-size: 2.2em;
+    }
+    .last {
+        margin-top: 73.2em;
+    }
+}
+@media screen and (max-width: 44em) { /*隨視窗大小調整內容排放*/
+    .first {
+        height: 125.2em;
+    }
+    .food-table {
+        height: auto;
+    }
+    #f1 {
+        height: 20.2em;
+        width: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 0em;
+    }
+    #f2 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 20.4em;
+    }
+    #f3 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 30.6em;
+    }
+    #f4 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: 0.1em;
+        top: 20.4em;
+    }
+    #f5 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: 0.1em;
+        top: 30.6em;
+    }
+    #f6 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 40.8em;
+    }
+    #f7 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 51em;
+    }
+    #f8 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: 0.1em;
+        top: 40.8em;
+    }
+    #f9 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: 0.1em;
+        top: 51em;
+    }
+    #f10 {
+        height: 20.2em;
+        width: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 61.2em;
+    }
+    #f11 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 81.6em;
+    }
+    #f12 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 91.8em;
+    }
+    #f13 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: 0.1em;
+        top: 81.6em;
+    }
+    #f14 {
+        height: 10em;
+        width: 10em;
+        left: 50%;
+        margin-left: 0.1em;
+        top: 91.8em;
+    }
+    #ft1 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 0%;
+        margin-top: 20.4em;
+    }
+    #ft2, #ft3 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 0em;
+    }
+    #ft4, #ft5 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 0em;
+    }
+    #ft6 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 20.4em;
+    }
+    #ft7 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 30.6em;
+    }
+    #ft8 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 20.4em;
+    }
+    #ft9 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 30.6em;
+    }
+    #ft10 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 40.8em;
+    }
+    #ft11 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 61.2em;
+    }
+    #ft12 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 61.2em;
+    }
+    #ft13 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 61.2em;
+    }
+    #ft14 { /*Hide expandable content by default*/
+        height: 20.2em;
+        left: 50%;
+        margin-left: -10.1em;
+        top: 61.2em;
+    }
+    #checkbox1:checked ~ #ft1 {
+        width: 20.2em;
+    }
+    #checkbox1:not(:checked) ~ #ft1 {
+        width: 0em;
+    }
+    #checkbox2:checked ~ #ft2, #checkbox3:checked ~ #ft3 {
+        width: 20.2em;
+    }
+    #checkbox2:checked ~ #f2, #checkbox2:checked ~ #f3,
+    #checkbox3:checked ~ #f2, #checkbox3:checked ~ #f3 {
+        margin-left: -10.1em;
+    }
+    #checkbox4:checked ~ #ft4, #checkbox5:checked ~ #ft5 {
+        width: 20.2em;
+    }
+    #checkbox4:checked ~ #f1, #checkbox5:checked ~ #f1 {
+        opacity: 1;
+    }
+    #checkbox4:checked ~ #f2, #checkbox4:checked ~ #f3,
+    #checkbox5:checked ~ #f2, #checkbox5:checked ~ #f3 {
+        margin-left: -10.1em;
+    }
+    #checkbox4:checked ~ #f4, #checkbox4:checked ~ #f5,
+    #checkbox5:checked ~ #f4, #checkbox5:checked ~ #f5 {
+        margin-left: 0.1em;
+    }
+    #checkbox6:checked ~ #ft6, #checkbox7:checked ~ #ft7 {
+        width: 20.2em;
+    }
+    #checkbox6:checked ~ #f10, #checkbox7:checked ~ #f10 {
+        opacity: 1;
+    }
+    #checkbox6:checked ~ #f8, #checkbox6:checked ~ #f9,
+    #checkbox7:checked ~ #f8, #checkbox7:checked ~ #f9 {
+        margin-right: -20.4em;
+    }
+    #checkbox8:checked ~ #ft8, #checkbox9:checked ~ #ft9,
+    #checkbox10:checked ~ #ft10, #checkbox11:checked ~ #ft11 {
+        width: 20.2em;
+    }
+    #checkbox11:checked ~ #f13, #checkbox11:checked ~ #f14 {
+        opacity: 1;
+    }
+    #checkbox11:checked ~ #f12 {
+        margin-right: -20.4em;
+    }
+    #checkbox12:checked ~ #ft12, #checkbox13:checked ~ #ft13 {
+        width: 20.2em;
+    }
+    #checkbox13:checked ~ #f13 {
+        margin-left: 0.1em;
+    }
+    #checkbox13:checked ~ #f11, #checkbox13:checked ~ #f12 {
+        visibility: visible;
+    }
+    #checkbox14:checked ~ #ft14 {
+        width: 20.2em;
+    }
+    #checkbox14:checked ~ #f13, #checkbox14:checked ~ #f14 {
+        margin-left: 0.1em;
+    }
+    #checkbox14:checked ~ #f11, #checkbox14:checked ~ #f12 {
+        opacity: 1;
+    }
+    #checkbox1:checked ~ #ft1 h1, #checkbox2:checked ~ #ft2 h1,
+    #checkbox3:checked ~ #ft3 h1, #checkbox4:checked ~ #ft4 h1,
+    #checkbox5:checked ~ #ft5 h1, #checkbox6:checked ~ #ft6 h1,
+    #checkbox7:checked ~ #ft7 h1, #checkbox8:checked ~ #ft8 h1,
+    #checkbox9:checked ~ #ft9 h1, #checkbox10:checked ~ #ft10 h1,
+    #checkbox11:checked ~ #ft11 h1, #checkbox12:checked ~ #ft12 h1,
+    #checkbox13:checked ~ #ft13 h1, #checkbox14:checked ~ #ft14 h1 {
+        font-size: 2.2em;
+    }
+    .food-name1 {
+    	font-size: 2.2em;
+    }
+    .food-name2 {
+    	font-size: 2.2em;
+    }
+    .food-name3 {
+    	font-size: 2.2em;
+    }
+    .last {
+        margin-top: 125.2em;
+    }
+}
+@media screen and (max-width: 35em) { /*隨視窗大小調整內容排放*/
+    .btn {
+        width: 4.8em;
+        height: 4.8em;
+        border-radius: 1.8em;
+    }
+    .btn i {
+        font-size: 1.45em;
+    }
+}
